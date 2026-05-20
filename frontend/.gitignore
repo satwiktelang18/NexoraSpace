@@ -1,0 +1,28 @@
+# dependencies
+node_modules/
+backend/venv/
+
+# next
+.next/
+out/
+
+# env
+.env
+.env.local
+
+# python
+__pycache__/
+*.pyc
+
+# uploads
+uploads/
+
+# logs
+*.log
+
+# mac
+.DS_Store
+
+# build
+dist/
+build/

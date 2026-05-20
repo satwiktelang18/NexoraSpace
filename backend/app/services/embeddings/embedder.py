@@ -1,0 +1,19 @@
+from sentence_transformers import SentenceTransformer
+
+model = SentenceTransformer('all-MiniLM-L6-v2')
+
+
+def get_embedding_sync(text: str) -> list[float]:
+    return model.encode(text).tolist()
+
+
+def get_embeddings_batch_sync(texts: list[str]) -> list[list[float]]:
+    return model.encode(texts).tolist()
+
+
+async def get_embedding(text: str) -> list[float]:
+    return get_embedding_sync(text)
+
+
+async def get_embeddings_batch(texts: list[str]) -> list[list[float]]:
+    return get_embeddings_batch_sync(texts)
