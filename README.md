@@ -13,7 +13,7 @@
 
 # NexoraSpace — AI Research Operating System
 
-**Upload documents, deploy AI agents, extract knowledge graphs, and get cited answers — all in one workspace.**
+**Build, deploy, and manage AI-powered workflows in a unified workspace with intelligent document understanding and structured knowledge extraction.**
 
 </div>
 
