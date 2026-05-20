@@ -9,7 +9,7 @@
 <img src="https://img.shields.io/badge/RAG-Pipeline-8B5CF6?style=for-the-badge&logoColor=white"/>
 <img src="https://img.shields.io/badge/Status-In%20Progress-F59E0B?style=for-the-badge"/>
 
-<br/><br/>
+<br/>
 
 # NexoraSpace — AI Research Operating System
 
@@ -27,14 +27,14 @@ NexoraSpace is a full-stack **AI Research Operating System** that transforms how
 
 ## Features ✨
 
-- 📁 Upload **PDF documents** to isolated, named workspaces
-- 🔍 **Semantic search** across all documents using vector embeddings
-- 🤖 **Multi-agent AI** for deep research and summarization
-- 🕸️ **Knowledge Graph** — visual entity and relationship mapping *(coming soon)*
-- 📌 **Page-level citations** — every answer backed by exact sources
-- 💬 **Multi-doc queries** — ask questions spanning multiple documents
-- 👥 **Team collaboration** — share workspaces and invite members
-- ⚡ Answers indexed and ready in **10–30 seconds**
+- Upload **PDF documents** to isolated, named workspaces
+- **Semantic search** across all documents using vector embeddings
+- **Multi-agent AI** for deep research and summarization
+- **Knowledge Graph** — visual entity and relationship mapping *(coming soon)*
+- **Page-level citations** — every answer backed by exact sources
+- **Multi-doc queries** — ask questions spanning multiple documents
+- **Team collaboration** — share workspaces and invite members
+- Answers indexed and ready in **10–30 seconds**
 
 ---
 
@@ -145,12 +145,12 @@ NexoraSpace is a full-stack **AI Research Operating System** that transforms how
 
 | Capability | Status | Description |
 |-----------|--------|-------------|
-| 🔍 Semantic Search | ✅ Live | Dense vector search across all chunks in a workspace |
-| 📌 Page Citations | ✅ Live | Every answer references the exact page and document |
-| 📂 Multi-doc Queries | ✅ Live | Query across multiple uploaded documents at once |
-| 👥 Team Collaboration | ✅ Live | Share workspaces; multiple users, one knowledge base |
-| 🤖 AI Agents | ✅ Live | Multi-agent workflows for deep research & summarization |
-| 🕸️ Knowledge Graph | 🚧 Coming Soon | Visual entity and relationship mapping from documents |
+| Semantic Search | ✅ Live | Dense vector search across all chunks in a workspace |
+| Page Citations | ✅ Live | Every answer references the exact page and document |
+| Multi-doc Queries | ✅ Live | Query across multiple uploaded documents at once |
+| Team Collaboration | ✅ Live | Share workspaces; multiple users, one knowledge base |
+| AI Agents | ✅ Live | Multi-agent workflows for deep research & summarization |
+| Knowledge Graph | 🚧 Coming Soon | Visual entity and relationship mapping from documents |
 
 ---
 
@@ -202,11 +202,11 @@ Open your browser at `http://localhost:3000`
 ## Usage ▶️
 
 1. **Register / Sign in** at `localhost:3000`
-2. **Create a Workspace** (e.g., "Infinite Void")
-3. **Upload a PDF** — drag & drop or click to browse *(digital PDFs only — scanned/handwritten won't work)*
+2. **Create a Workspace** 
+3. **Upload a PDF** — drag & drop or click to browse *(digital PDFs only — scanned/handwritten WON'T work)*
 4. **Wait ~10–30s** for the AI to index your document
 5. **Click "New Chat"** and ask anything about your documents
-6. Receive **cited, source-backed answers** with page references
+6. Receive **cited, source-backed answers** 
 
 ---
 
