@@ -34,7 +34,7 @@ NexoraSpace is a full-stack **AI Research Operating System** that transforms how
 - **Page-level citations** — every answer backed by exact sources
 - **Multi-doc queries** — ask questions spanning multiple documents
 - **Team collaboration** — share workspaces and invite members
-- Answers indexed and ready in **10–30 seconds**
+- Documents are processed and made queryable within ~ **10–30 seconds**
 
 ---
 
@@ -42,13 +42,13 @@ NexoraSpace is a full-stack **AI Research Operating System** that transforms how
 
     User
      │
-     ├── Next.js Frontend (localhost:3000)
+     ├── Next.js Frontend (Client Layer)
      │     ├── Workspace Manager
      │     ├── Document Upload UI
      │     ├── AI Chat Interface (with citations)
      │     └── Agent Dashboard
      │
-     └── FastAPI Backend (localhost:8000)
+     └── FastAPI Backend (API Layer)
            ├── Auth & User Management
            ├── Workspace & Document Models (PostgreSQL)
            ├── Embedding Service → pgvector
@@ -165,7 +165,7 @@ NexoraSpace is a full-stack **AI Research Operating System** that transforms how
 
 ### 1. Clone the repository
 
-    git clone https://github.com/YOUR_USERNAME/YOUR_REPO_NAME.git
+    git clone https://github.com/satwiktelang18/NexoraSpace.git
     cd NexoraSpace
 
 ### 2. Backend setup
@@ -175,6 +175,7 @@ NexoraSpace is a full-stack **AI Research Operating System** that transforms how
     source venv/bin/activate
     pip install -r requirements.txt
 
+Create a `.env` file locally using the template below.
 Configure your `.env`:
 
     DATABASE_URL=postgresql://user:password@localhost:5432/nexoraspace
@@ -222,6 +223,16 @@ Open your browser at `http://localhost:3000`
 | `pending` | Chunks created, waiting for embedding |
 | `ready` | Fully indexed — available for semantic search |
 | `failed` | Error during pipeline (check logs) |
+
+---
+
+# 💡 Why NexoraSpace?
+
+We go beyond traditional document storage by building an AI-native knowledge layer designed for deep understanding and reasoning.
+NexoraSpace converts static PDFs into structured, queryable intelligence using retrieval-augmented generation (RAG).
+Every document becomes part of a semantic system powered by embeddings, context retrieval, and AI agents.
+
+The result: cited, context-aware answers that feel less like search — and more like interacting with knowledge itself.
 
 ---
 
