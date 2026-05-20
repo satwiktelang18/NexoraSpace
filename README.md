@@ -1,3 +1,4 @@
+```markdown
 <div align="center">
 
 <img src="https://img.shields.io/badge/Next.js-15-white?style=for-the-badge&logo=next.js&logoColor=black"/>
@@ -13,7 +14,7 @@
 
 # NexoraSpace — AI Research Operating System
 
-**Upload documents, deploy AI agents, extract knowledge graphs, and get cited answers — all in one workspace.**
+**Build, deploy, and manage AI-powered workflows in a unified workspace with intelligent document understanding and structured knowledge extraction.**
 
 </div>
 
@@ -27,34 +28,34 @@ NexoraSpace is a full-stack **AI Research Operating System** that transforms how
 
 ## Features ✨
 
-- 📁 Upload **PDF documents** to isolated, named workspaces
-- 🔍 **Semantic search** across all documents using vector embeddings
-- 🤖 **Multi-agent AI** for deep research and summarization
-- 🕸️ **Knowledge Graph** — visual entity and relationship mapping *(coming soon)*
-- 📌 **Page-level citations** — every answer backed by exact sources
-- 💬 **Multi-doc queries** — ask questions spanning multiple documents
-- 👥 **Team collaboration** — share workspaces and invite members
-- ⚡ Answers indexed and ready in **10–30 seconds**
+- Upload **PDF documents** to isolated, named workspaces
+- **Semantic search** across all documents using vector embeddings
+- **Multi-agent AI** for deep research and summarization
+- **Knowledge Graph** — visual entity and relationship mapping *(coming soon)*
+- **Page-level citations** — every answer backed by exact sources
+- **Multi-doc queries** — ask questions spanning multiple documents
+- **Team collaboration** — share workspaces and invite members
+- Answers indexed and ready in **10–30 seconds**
 
 ---
 
 ## Architecture Overview 🧠
 
-User
-│
-├── Next.js Frontend (localhost:3000)
-│     ├── Workspace Manager
-│     ├── Document Upload UI
-│     ├── AI Chat Interface (with citations)
-│     └── Agent Dashboard
-│
-└── FastAPI Backend (localhost:8000)
-├── Auth & User Management
-├── Workspace & Document Models (PostgreSQL)
-├── Embedding Service → pgvector
-├── RAG Pipeline → Retrieval + Reranking
-├── AI Agent Workers
-└── Knowledge Graph Extractor
+    User
+     │
+     ├── Next.js Frontend (localhost:3000)
+     │     ├── Workspace Manager
+     │     ├── Document Upload UI
+     │     ├── AI Chat Interface (with citations)
+     │     └── Agent Dashboard
+     │
+     └── FastAPI Backend (localhost:8000)
+           ├── Auth & User Management
+           ├── Workspace & Document Models (PostgreSQL)
+           ├── Embedding Service → pgvector
+           ├── RAG Pipeline → Retrieval + Reranking
+           ├── AI Agent Workers
+           └── Knowledge Graph Extractor
 
 ---
 
@@ -75,51 +76,51 @@ User
 
 ## Project Structure 🏗️
 
-NexoraSpace/
-│
-├── backend/
-│   ├── app/
-│   │   ├── models/
-│   │   │   ├── document.py         # Document ORM model (UUID, status, workspace FK)
-│   │   │   ├── chunk.py            # DocumentChunk model (text, page, embedding index)
-│   │   │   ├── user.py             # User model
-│   │   │   ├── workspace.py        # Workspace model
-│   │   │   └── workspace_member.py # Team membership
-│   │   ├── chat.py                 # Chat session handler
-│   │   └── pipeline.py             # RAG orchestration
-│   ├── services/
-│   │   ├── embeddings/             # Text → vector embeddings
-│   │   ├── rag/                    # Core RAG logic
-│   │   ├── reranking/              # Chunk reranker
-│   │   ├── retrieval/              # Vector store retrieval
-│   │   └── workers/                # Background job workers
-│   ├── utils/
-│   ├── main.py                     # FastAPI entry point
-│   └── requirements.txt
-│
-├── frontend/
-│   ├── app/
-│   │   ├── (app)/
-│   │   │   ├── agents/             # AI Agent dashboard
-│   │   │   ├── chat/               # Chat interface with citations
-│   │   │   ├── dashboard/          # User dashboard
-│   │   │   ├── settings/           # User/workspace settings
-│   │   │   └── workspace/          # Workspace view & document manager
-│   │   ├── components/
-│   │   │   ├── citations/          # Citation display components
-│   │   │   ├── sidebar/            # Navigation sidebar
-│   │   │   └── upload/             # PDF upload dropzone
-│   │   ├── layout.tsx
-│   │   └── page.tsx                # Landing page
-│   ├── lib/
-│   ├── store/
-│   ├── types/
-│   ├── globals.css
-│   └── next.config.ts
-│
-├── docker-compose.yml
-├── .env
-└── README.md
+    NexoraSpace/
+    │
+    ├── backend/
+    │   ├── app/
+    │   │   ├── models/
+    │   │   │   ├── document.py         # Document ORM model (UUID, status, workspace FK)
+    │   │   │   ├── chunk.py            # DocumentChunk model (text, page, embedding index)
+    │   │   │   ├── user.py             # User model
+    │   │   │   ├── workspace.py        # Workspace model
+    │   │   │   └── workspace_member.py # Team membership
+    │   │   ├── chat.py                 # Chat session handler
+    │   │   └── pipeline.py             # RAG orchestration
+    │   ├── services/
+    │   │   ├── embeddings/             # Text → vector embeddings
+    │   │   ├── rag/                    # Core RAG logic
+    │   │   ├── reranking/              # Chunk reranker
+    │   │   ├── retrieval/              # Vector store retrieval
+    │   │   └── workers/                # Background job workers
+    │   ├── utils/
+    │   ├── main.py                     # FastAPI entry point
+    │   └── requirements.txt
+    │
+    ├── frontend/
+    │   ├── app/
+    │   │   ├── (app)/
+    │   │   │   ├── agents/             # AI Agent dashboard
+    │   │   │   ├── chat/               # Chat interface with citations
+    │   │   │   ├── dashboard/          # User dashboard
+    │   │   │   ├── settings/           # User/workspace settings
+    │   │   │   └── workspace/          # Workspace view & document manager
+    │   │   ├── components/
+    │   │   │   ├── citations/          # Citation display components
+    │   │   │   ├── sidebar/            # Navigation sidebar
+    │   │   │   └── upload/             # PDF upload dropzone
+    │   │   ├── layout.tsx
+    │   │   └── page.tsx                # Landing page
+    │   ├── lib/
+    │   ├── store/
+    │   ├── types/
+    │   ├── globals.css
+    │   └── next.config.ts
+    │
+    ├── docker-compose.yml
+    ├── .env
+    └── README.md
 
 ---
 
@@ -145,12 +146,12 @@ NexoraSpace/
 
 | Capability | Status | Description |
 |-----------|--------|-------------|
-| 🔍 Semantic Search | ✅ Live | Dense vector search across all chunks in a workspace |
-| 📌 Page Citations | ✅ Live | Every answer references the exact page and document |
-| 📂 Multi-doc Queries | ✅ Live | Query across multiple uploaded documents at once |
-| 👥 Team Collaboration | ✅ Live | Share workspaces; multiple users, one knowledge base |
-| 🤖 AI Agents | ✅ Live | Multi-agent workflows for deep research & summarization |
-| 🕸️ Knowledge Graph | 🚧 Coming Soon | Visual entity and relationship mapping from documents |
+| Semantic Search | ✅ Live | Dense vector search across all chunks in a workspace |
+| Page Citations | ✅ Live | Every answer references the exact page and document |
+| Multi-doc Queries | ✅ Live | Query across multiple uploaded documents at once |
+| Team Collaboration | ✅ Live | Share workspaces; multiple users, one knowledge base |
+| AI Agents | ✅ Live | Multi-agent workflows for deep research & summarization |
+| Knowledge Graph | ⌛️ Coming Soon | Visual entity and relationship mapping from documents |
 
 ---
 
@@ -165,47 +166,35 @@ NexoraSpace/
 
 ### 1. Clone the repository
 
-```bash
-git clone https://github.com/YOUR_USERNAME/YOUR_REPO_NAME.git
-cd NexoraSpace
-```
+    git clone https://github.com/YOUR_USERNAME/YOUR_REPO_NAME.git
+    cd NexoraSpace
 
 ### 2. Backend setup
 
-```bash
-cd backend
-python3 -m venv venv
-source venv/bin/activate
-pip install -r requirements.txt
-```
+    cd backend
+    python3 -m venv venv
+    source venv/bin/activate
+    pip install -r requirements.txt
 
 Configure your `.env`:
 
-```env
-DATABASE_URL=postgresql://user:password@localhost:5432/nexoraspace
-SECRET_KEY=your_secret_key
-OPENAI_API_KEY=your_openai_key
-```
+    DATABASE_URL=postgresql://user:password@localhost:5432/nexoraspace
+    SECRET_KEY=your_secret_key
+    OPENAI_API_KEY=your_openai_key
 
 Run the backend:
 
-```bash
-uvicorn app.main:app --reload
-```
+    uvicorn app.main:app --reload
 
 ### 3. Frontend setup
 
-```bash
-cd frontend
-npm install
-npm run dev
-```
+    cd frontend
+    npm install
+    npm run dev
 
 ### 4. Or run everything with Docker
 
-```bash
-docker-compose up --build
-```
+    docker-compose up --build
 
 Open your browser at `http://localhost:3000`
 
@@ -214,19 +203,19 @@ Open your browser at `http://localhost:3000`
 ## Usage ▶️
 
 1. **Register / Sign in** at `localhost:3000`
-2. **Create a Workspace** (e.g., "Infinite Void")
-3. **Upload a PDF** — drag & drop or click to browse *(digital PDFs only — scanned/handwritten won't work)*
+2. **Create a Workspace** 
+3. **Upload a PDF** — drag & drop or click to browse *(digital PDFs only — scanned/handwritten WON'T work)*
 4. **Wait ~10–30s** for the AI to index your document
-5. **Click "New Chat"** and ask anything about your documents
-6. Receive **cited, source-backed answers** with page references
+5. **Click "New Chat"** and ask anything about your documents 
+6. Receive **cited, source-backed answers** 
 
 ---
 
 ## Document Status Lifecycle 📄
 
-Uploaded → Processing → Embedding → Ready
-|
-Queryable via Chat
+    Uploaded → Processing → Embedding → Ready
+                                          │
+                                       Queryable via Chat
 
 | Status | Meaning |
 |--------|---------|
@@ -259,3 +248,4 @@ Queryable via Chat
 ## 👨‍💻 Author
 
 **Satwik Telang**
+```
