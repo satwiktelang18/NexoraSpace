@@ -5,7 +5,7 @@
 <img src="https://img.shields.io/badge/Status-In%20Progress-orange?style=for-the-badge"/>
 <img src="https://img.shields.io/badge/Build-Modern%20Productivity%20Tool-blue?style=for-the-badge"/>
 
-<br/><br/>
+<br/>
 
 # 🚀 NexoraSpace
 
@@ -41,5 +41,13 @@ It blends:
 
 ## 🖥️ How It Works
 
-```txt
 Login → Create Workspace → Add Project → Create Tasks → Assign Members → Track Progress 🚀
+
+---
+
+## ⚙️ Installation
+
+```bash
+git clone https://github.com/satwiktelang18/NexoraSpace.git
+cd NexoraSpace
+```
