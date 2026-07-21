@@ -230,7 +230,7 @@ Open your browser at `http://localhost:3000`
 
 We go beyond traditional document storage by building an AI-native knowledge layer designed for deep understanding and reasoning.
 NexoraSpace converts static PDFs into structured, queryable intelligence using retrieval-augmented generation (RAG).
-Every document becomes part of a semantic system powered by embeddings, context retrieval, and AI agents.
+Every document becomes part of a semantic system powered by embeddings, context retrieval, and AI agents. ✨
 
 The result: cited, context-aware answers that feel less like search — and more like interacting with knowledge itself.
 
