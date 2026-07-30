@@ -11,7 +11,7 @@
 
 <br/>
 
-# NexoraSpace — AI Research Operating System
+# NexoraSpace — AI Research Operating System 📑
 
 **Build, deploy, and manage AI-powered workflows in a unified workspace with intelligent document understanding and structured knowledge extraction.**
 
